@@ -1,0 +1,45 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "js": true,
+    },
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  
+  "rules": {
+    "no-underscore-dangle": [0],
+    "comma-dangle": "error",
+    "consistent-return": [0],
+    "eol-last": [0],
+    "import/extensions": ["error", "never", {
+      "js": "never"
+    }],
+    "max-len": [1, 120, 4, { "ignoreComments": true }],
+    "no-unused-vars": "error",
+    "no-param-reassign": [0],
+    "one-var": [2, { "var": "always", "let": "never", "const": "never" }],
+    "no-plusplus": "error",
+    "camelcase": [
+      "error",
+      {
+        "allow": ["^UNSAFE_"]
+      }
+    ],
+    "prettier/prettier": ["error"],
+    "linebreak-style": 0
+  }
+}
